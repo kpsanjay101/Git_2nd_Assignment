@@ -1,17 +1,17 @@
 // for prime number
 
 let num = 71;
-let fact = 0;
+let factor = 0;
 
-for(let i=2; i<num; i++){
+for(let i=1; i<=num; i++){
 
 	if(num % 2 == 0){
 
-		fact++;
+		factor++;
 	}
 }
 
-if(fact == 2){
+if(factor == 2){
 	console.log("prime Number");
 }else{
 	console.log("Not prime Number");
@@ -19,15 +19,14 @@ if(fact == 2){
 
 // For Palindrome 
 
-let num1 = 12321;
-let bag1 = ""+num1;
-let bag2 = "";
+let str="naman";
+let bag = "";
 
-for(let i = bag1.length; i > 0; i++){
-	bag2 = bag2+bag[i];
+for(let i =str.length-1; i>=0; i--){
+	bag+=str[i];
 }
 
-if(bag1 == bag2){
+if(bag == str){
 	console.log("palindrome");
 }else{
 	console.log("Not palindrome");
